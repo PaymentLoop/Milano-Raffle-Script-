@@ -15,7 +15,7 @@ def main(limit):
                     'first_name': '',
                     'last_name' : '',
                     'birth'     : '', #MM-DD-YYYY don't include spaces
-                    'mail'      : '', #E-mail address
+                    'mail'      : email, #Dont edit this
                     'number'    : '', #Phone number
                     'size'      : '', # Example: 10, 10 1/2, 11
                     'country'   : '',
@@ -25,7 +25,7 @@ def main(limit):
                     'street'    : ''
 
         }
-        resp = requests.post(url, data=payload, headers=headers)
+        resp = session.post(url, data=payload, headers=headers)
         print('Raffle has been entered {}/{} times.'.format(i, limit))
 
 if __name__ == "__main__":
