@@ -1,7 +1,7 @@
 import requests
 from random import getrandbits
 from bs4 import BeautifulSoup
-url = 'https://www.excelsiormilano.com/content/31-yeezy'
+url = 'https://www.excelsiormilano.com/module/antcontactcustom/sendmail'
 
 headers = {'User-Agent':
            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'}
