@@ -12,17 +12,17 @@ def main(limit):
         session = requests.Session()
         email = 'your_email+{}@gmail.com'.format(getrandbits(40)) # CHANGE YOUR_EMAIL to your email prefix. don't change the +{} after.
         payload = {
-                    'first_name': '',
-                    'last_name' : '',
-                    'birth'     : '', #MM-DD-YYYY don't include spaces
+                    'first_name': '', #Enter your first Name
+                    'last_name' : '', #Enter your last Name
+                    'birth'     : '', #Enter Brithdate in theMM-DD-YYYY format. Don't include spaces
                     'mail'      : email, #Dont edit this
-                    'number'    : '', #Phone number
+                    'number'    : '', #Enter your phone number
                     'size'      : '', # Example: 10, 10 1/2, 11
-                    'country'   : '',
-                    'state'     : '',
-                    'city'      : '',
-                    'zip'       : '',
-                    'street'    : ''
+                    'country'   : '', #Enter your country
+                    'state'     : '', #Enter your State/Province/Region
+                    'city'      : '', #Enter your city
+                    'zip'       : '', #Enter your Zip/Postal code
+                    'street'    : ''  #Enter your street address
 
         }
         resp = session.post(url, data=payload, headers=headers)
